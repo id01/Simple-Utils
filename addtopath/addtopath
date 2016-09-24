@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# This is a simple script to add all executables in a directory to your ~/bin
+# Move to ~/bin to install.
+
+if [ ! -d "$HOME/bin" ]; then
+	echo "$HOME/bin does not exist. Creating..."
+	mkdir ~/bin
+fi
+if [ -z "$1" ]; then
+	echo "No directory specified. Using $(pwd)."
+	pth=$(pwd)
+else
+	pth=$1
+fi
+if [ ! -d "$pth" ]; then
+        echo "addtopath: directory does not exist"
+        exit
+fi
+if [ -z "$2" ]; then
+	md=1
+else
+	md=$2
+fi
+find $pth -maxdepth $md -type f -executable -exec ln -s {} ~/bin \;
