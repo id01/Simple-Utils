@@ -16,8 +16,7 @@ To uninstall, remove /usr/local/bin/addtopath
 ## RAIDCHECKER
 # Why create this?
 Good question. Because I just got a raid array today (I'm paranoid about losing my data).  
-And to officially be even more paranoid, I want to be warned ASAP when things stop working.  
-Don't expect updates.
+And to officially be even more paranoid, I want to be warned ASAP when things stop working.
 
 # Installation
 ```
