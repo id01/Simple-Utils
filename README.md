@@ -23,3 +23,15 @@ And to officially be even more paranoid, I want to be warned ASAP when things st
 install.sh
 ```
 To uninstall, remove labeled section from ~/.profile and remove raidchecker.sh from ~/bin
+
+## BACKUP
+### Why create this?
+Because I'm afraid of losing my data. This was written when I was on Ubuntu.  
+No Installation required.  
+
+## VOLUMECONTROL
+### Why create this?
+Because I want to control my volume from a simple command.  
+
+### Installation
+This program is for Arch Linux. It makes use of notify-send.sh. Install it and run this.  
